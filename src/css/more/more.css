@@ -1,0 +1,11 @@
+.index1 {
+  background-color: red;
+}
+.index1 .index2 {
+  background-color: black;
+}
+.index1 .index3 {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vcmUvbW9yZS5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MscUJBQUE7O0FBREQsT0FHQztFQUFVLHVCQUFBOztBQUhYLE9BSUM7RUFBVSxzQkFBQSIsInNvdXJjZXNDb250ZW50IjpbIi5pbmRleDEgeyBcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7IFxyXG5cclxuXHQuaW5kZXgyIHsgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7IH1cclxuXHQuaW5kZXgzIHsgYmFja2dyb3VuZC1jb2xvcjogYmx1ZTsgfVxyXG59Il0sImZpbGUiOiJtb3JlL21vcmUuY3NzIn0= */
