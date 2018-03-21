@@ -6,6 +6,8 @@ var gulp = require('gulp'), //本地安装gulp所用到的地方
     //这并不是我们所希望的，所以我们需要处理出现异常并不终止watch事件（gulp-plumber），并提示我们出现了错误（gulp-notify）。
     notify = require('gulp-notify');
     plumber = require('gulp-plumber');
+    
+    uglifyjs = require("gulp-uglify");//压缩混淆js  
  
 //定义一个testLess任务（自定义任务名称）
 gulp.task('testLess', function () {
@@ -26,3 +28,12 @@ gulp.task('testWatch',function(){
 //gulp.task(name[, deps], fn) 定义任务  name：任务名称 deps：依赖任务名称 fn：回调函数
 //gulp.src(globs[, options]) 执行任务处理的文件  globs：处理的文件路径(字符串或者字符串数组) 
 //gulp.dest(path[, options]) 处理完后文件生成路径
+
+
+  
+  
+gulp.task("script",function(){  
+    return gulp.src("src/js/*.*") //JS文件地址  
+    .pipe(uglifyjs())  
+    .pipe(gulp.dest("build")) //混淆后文件输出地址  
+})  
